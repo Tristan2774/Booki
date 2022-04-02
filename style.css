@@ -1,0 +1,575 @@
+/* Déclaration de la police Raleway pour toute la page */
+html,
+body {
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+
+/* Déclaration de tous les types de flex utilisés dans la page */
+.centrage_flex_centré {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centrage_flex_avec_espace_autour {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.centrage_flex_avec_espace_entre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.centrage_flex_colonne_centré {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.centrage_flex_colonne_avec_espace_autour {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.centrage_flex_colonne_avec_espace_entre {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Options et couleurs de texte */
+.retrait_deco_texte {
+  text-decoration: none;
+}
+.retrait_encadre_zone_recherche {
+  border: none;
+}
+.gras {
+  font-weight: bold;
+}
+.bleu {
+  color: #0065fc;
+}
+
+.gris {
+  color: #f2f2f2;
+}
+.couleur_bleue_bouton_rechercher {
+  background-color: #0065fc;
+}
+
+.couleur_grise_containers {
+  background-color: #f2f2f2;
+}
+/* Paramètres d'écartement, d'alignement, de centrage et de bordure */
+.ecartement_entete {
+  height: auto;
+}
+.centrage_droit_liens {
+  width: 100%;
+}
+
+.largeur_hauteur_liensHA {
+  width: 140px;
+  height: 99px;
+}
+.couleur_liensHA {
+  color: black;
+}
+.bordure_haute_entete {
+  border-top: 1px solid transparent;
+}
+.bordure_haute_entete:hover {
+  border-top: 1px solid #0065fc;
+  cursor: pointer;
+}
+.bordure_haute_entete:hover > a {
+  color: #0065fc;
+}
+.alignement_gauche_logo {
+  margin-bottom: 7px;
+}
+/* Options et paramètres du header */
+.cacher_icone_loupe_grand_ecran {
+  display: none;
+}
+.zone_icone_localisation {
+  width: 400px;
+  border-radius: 10px;
+  border: 0.5px solid #f2f2f2;
+}
+.centrage_intitulé_marseille {
+  padding-left: 20px;
+}
+.taille_zone_recherche {
+  height: 50px;
+  width: 230px;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+.taille_icone_localisation {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px 0 0 10px;
+}
+.remplissage_bouton_rechercher {
+  height: 50px;
+  width: 120px;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+}
+.remplissage_bouton_rechercher:hover {
+  color: #0065fc;
+  background-color: #f2f2f2;
+}
+/* Options et paramètres des filtres */
+.espace_entre_filtres_et_autres_elements {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.mise_en_flex_filtres {
+  display: flex;
+  align-items: center;
+}
+.alignement_droit_zones_avec_filtres {
+  margin-right: 20px;
+}
+.taille_icones_filtres {
+  border: 2px solid #f2f2f2;
+  height: 50px;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+
+.taille_icones_filtres:hover > .centrage_texte_filtres {
+  color: #0065fc;
+}
+.taille_icones_filtres:hover > .parametres_bulles {
+  color: white;
+  background-color: #0065fc;
+}
+.centrage_texte_filtres {
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 0 25px 25px 0;
+}
+
+.parametres_bulles {
+  margin-left: -2px;
+  border-radius: 25px;
+  width: 52px;
+  height: 52px;
+  color: #0065fc;
+  background-color: #deebff;
+}
+/* Options et paramètres de la zone infos "Plus de 500..."  */
+.info {
+  display: flex;
+  align-items: center;
+}
+.parametres_info {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #f2f2f2;
+  border-radius: 25px;
+  margin-right: 5px;
+}
+/* Partie "Hébergements à Marseille" */
+.parametres_cartes_hebergements {
+  flex: 2;
+  height: 650px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.bloc-hebergements {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.marge_basse_bloc_hebergements {
+  margin-bottom: 10px;
+}
+.marge_haute_bloc2_hebergements {
+  margin-top: 10px;
+}
+.rectangles_hebergements {
+  width: 30%;
+  height: auto;
+  background-color: white;
+  padding: 1%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+.rectangles_hebergements:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.rectangles_hebergements_intérieur {
+  width: 90%;
+}
+.ecartement_lignes_hebergements {
+  line-height: 2px;
+}
+.cannebiere {
+  object-fit: cover;
+  width: 100%;
+  height: 120px;
+  border-radius: 15px 15px 0 0;
+}
+.hotel_port {
+  object-fit: cover;
+  width: 100%;
+  height: 120px;
+  border-radius: 15px 15px 0 0;
+}
+.hotel_mouettes {
+  object-fit: cover;
+  width: 100%;
+  height: 120px;
+  border-radius: 15px 15px 0 0;
+}
+.hotel_mer {
+  object-fit: cover;
+  width: 100%;
+  height: 120px;
+  border-radius: 15px 15px 0 0;
+}
+.auberge_panier {
+  object-fit: cover;
+  width: 100%;
+  height: 120px;
+  border-radius: 15px 15px 0 0;
+}
+.hotel_amina {
+  object-fit: cover;
+  width: 100%;
+  height: 120px;
+  border-radius: 15px 15px 0 0;
+}
+/* Partie "Les plus populaires" */
+
+.taille_bloc_populaires {
+  flex: 1;
+  height: 650px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+.ecartement_titre_rectangle
+{margin-top: -14px;
+}
+.ecartement_etoiles
+{margin-top: 45px; 
+}
+.ecart_remplissage_bloc_populaires {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.marge_basse_bloc_pluspopulaires {
+  margin-bottom: 22px;
+}
+.rectangles_populaires {
+  background-color: white;
+  height: auto;
+  padding: 1% 0 1% 1%;
+  border-radius: 20px;
+}
+.rectangles_populaires:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+}
+.rectangles_populaires_interieur {
+  width: 60%;
+  padding-left: 5%;
+}
+.hotel_soleil {
+  object-fit: cover;
+  width: 34%;
+  height: 160px;
+  border-radius: 15px 0 0 15px;
+}
+.au_coeur_eau {
+  object-fit: cover;
+  width: 34%;
+  height: 160px;
+  border-radius: 15px 0 0 15px;
+}
+.hotel_bleu_blanc {
+  object-fit: cover;
+  width: 34%;
+  height: 160px;
+  border-radius: 15px 0 0 15px;
+}
+/* Partie "Activités à Marseille" */
+#activites {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.bloc-activites {
+  width: 100%;
+  height: 600px;
+}
+.rectangles_activites_mise_en_page {
+  width: 23%;
+  height: 600px;
+}
+
+.rectangles_activites_dimensions {
+  width: 23%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+.rectangles_activites_dimensions:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+.rectangles_activites_largeur_bordure {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+.rectangles_activites_largeur_bordure:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.hauteur_des_titres_activites {
+  height: 70px;
+}
+.disposition_titres_activites {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 5%;
+  width: 95%;
+}
+.vieux_port {
+  object-fit: cover;
+  width: 100%;
+  height: 530px;
+  border-radius: 15px 15px 0 0;
+}
+.fort_pomegues {
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+  border-radius: 15px 15px 0 0;
+}
+.iles_frioules {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+  border-radius: 15px 15px 0 0;
+}
+.calanques {
+  object-fit: cover;
+  width: 100%;
+  height: 530px;
+  border-radius: 15px 15px 0 0;
+}
+.notre_dame {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 15px 15px 0 0;
+}
+.parc_longchamp {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 15px 15px 0 0;
+}
+/* Partie footer */
+.footer {
+  height: 300px;
+  margin-top: 100px;
+}
+.hauteur_bloc_footer {
+  height: 150px;
+}
+.marge_gauche_bloc_footer {
+  margin-left: 2%;
+}
+
+.marge_droite_bloc_footer {
+  margin-right: 15%;
+}
+
+.couleur_liens_footer {
+  color: black;
+}
+
+.retrait_puce_texte {
+list-style: none; 
+padding:0; 
+}
+/* Paramètres et options de la partie Responsive */
+
+
+@media(max-width: 992px) {
+  .positionnement_filtres_colonnes {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .filtre-texte-icons {
+    margin-bottom: 20px;
+  }
+  #hebergements {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .ecart_remplissage_bloc_populaires {
+    flex: none;
+    width: 90%;
+    margin-left: 0;
+    padding: 5%;
+  }
+  .bloc-hebergements {
+    flex: none;
+    width: 90%;
+    margin-right: 0;
+    margin-top: 50px;
+    padding: 5%;
+  }
+}
+@media(max-width: 768px) {
+  .centrage_droit_liens {
+    width: 90%;
+  }
+  .ecartement_liensHA_marge_gauche {
+    margin-left: 20%;
+  }
+  .bloc-hebergements {
+    height: auto;
+  }
+  .marge_basse_bloc_hebergements {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .marge_haute_bloc2_hebergements {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .rectangles_hebergements {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .rectangles_hebergements_intérieur {
+    min-height: auto;
+  }
+  .bloc-activites {
+    flex-direction: column;
+    height: auto;
+  }
+  .rectangles_activites_dimensions {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .rectangles_activites_mise_en_page {
+    width: 100%;
+    height: auto;
+  }
+  .rectangles_activites_largeur_bordure {
+    margin-bottom: 50px;
+  }
+  .vieux_port,
+  .fort_pomegues,
+  .iles_frioules,
+  .calanques,
+  .notre_dame,
+  .parc_longchamp {
+    height: 200px;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding-left: 20px;
+  }
+  .marge_gauche_bloc_footer {
+    margin-left: 0;
+  }
+}
+@media(max-width: 600px) {
+  .largeur_hauteur_liensHA {
+    flex-direction: row;
+  }
+  .ecartement_liensHA_marge_gauche {
+    order: 1;
+    width: 100%;
+    margin-left: 0;
+  }
+  .largeur_lienHA_en_réduit {
+    width: 100%;
+    border-top: 0;
+    border-bottom: 5px solid #f2f2f2;
+  }
+  .centrage_droit_liens {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .largeur_lienHA_en_réduit:hover {
+    border-top: 0;
+    border-bottom: 1px solid #0065fc;
+  }
+  
+  .zone_icone_localisation {
+    width: auto;
+    border: none;
+  }
+  .taille_zone_recherche {
+    width: 200px;
+    border-bottom: 1px solid #f2f2f2;
+    border-top: 1px solid #f2f2f2;
+  }
+  .button-search {
+    width: 50px;
+    border-radius: 15px;
+  }
+  .cacher_icone_loupe_grand_ecran {
+    display: block;
+  }
+  .cacher_rechercher_petit_ecran {
+    display: none;
+  }
+  .espace_entre_filtres_et_autres_elements {
+    padding-left: 5%;
+  }
+  .alignement_marge_droite_economique {
+    margin-right: 5px;
+  }
+  .marge_droite_familial_petit_ecran {
+    margin-right: 0;
+  }
+  .centrage_texte_filtres {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .info {
+    padding-left: 5%;
+  }
+  .ecart_remplissage_bloc_populaires {
+    border-radius: 0;
+  }
+  .bloc-hebergements {
+    background-color: white;
+  }
+  .entete_paragraphe_en_reduit {
+    padding-left: 5%;
+  }
+  .bloc-activites {
+    padding: 5%;
+    width: 90%;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
